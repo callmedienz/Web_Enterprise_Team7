@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/style2.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <title>Welcome</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#">FPT Greenwich</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <div style="padding-left: 30px;">
+
+                </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Create event</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        View Idea
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Create Account</a>
+                </li>
+                <li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-group my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+            <li class="nav nav-item">
+                <a href="login.html" title="Logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="hide-sm">Logout</span></a>
+            </li>
+        </div>
+    </nav>
+
+    <section class="container">
+        <h1 class="large text-primary">
+            Posts
+        </h1>
+        <p class="lead"><i class="fas fa-user"></i> Welcome to the community!</p>
+
+        <div class="post-form">
+            <div class="bg-primary p">
+                <h3>Say Something...</h3>
+            </div>
+            <form class="form my-1">
+                <textarea name="text" cols="30" rows="5" placeholder="Create a post" required></textarea>
+                <input type="submit" class="btn btn-dark my-1" value="Submit" />
+            </form>
+        </div>
+
+        <div class="posts">
+            <div class="post bg-white p-1 my-1">
+                <div>
+                    <a href="profile.html">
+                        <img class="round-img"
+                            src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"
+                            alt="" />
+                        <h4>Thai Son</h4>
+                    </a>
+                </div>
+
+                <div>
+                    <p class="my-1">
+                        Xin chao tat ca cac ban!
+                    </p>
+                    <p class="post-date">
+                        Posted on 10/03/2023
+                    </p>
+                    <button type="button" class="btn btn-light">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>1</span>
+                    </button>
+                    <button type="button" class="btn btn-light">
+                        <i class="fas fa-thumbs-down"></i>
+                        <span>1</span>
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
