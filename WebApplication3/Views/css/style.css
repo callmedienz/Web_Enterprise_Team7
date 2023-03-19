@@ -1,0 +1,242 @@
+/**** Thêm reset css giúp thiết lập các style của thành phần HTML theo 1 chuẩn nhất định ****/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**** Tải hình nền trên trang Login và thiết lập background-image cho trang Login ****/
+.login-container{
+    background-image: url("./netflix_login_bgr.jpg");
+    background-size: cover;
+    height: 1086px;
+    position: relative;
+    width: 100%;
+}
+
+/**** Css cho lớp phủ mờ - overlay cho layout ****/
+.login-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #F5EAEA;
+    /* background-color: #222831; */
+    
+}
+
+/**** Css html chung cho trang web *****/
+html{
+    font-size: 10px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+/**** Css cho phần header *****/
+.login-header{
+    padding-top: 20px;
+    padding-left: 44px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.login-header a{
+    font-size: 5rem; /* 5rem nghĩa là 50px(gấp 5 lần font-size của root - html) */
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #E50914;
+}
+
+/**** Css cho phần login-body ****/
+.login-body{
+    width: 448px;
+    height: 660px;
+    /* background-color:  rgba(0, 0, 0, 0.75); Màu nền với độ mờ 0.75 */
+    background-color:  #E5D1FA;
+    /* background-color: #393E46; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; /* Để căn giữa */
+    top: 88px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/**** css cho login-form-header ****/
+.login-form-header{
+    font-size: 3.2rem;
+    font-weight: 700px;
+    color: #3E54AC;
+    /* color: #00ADB5; */
+}
+
+/**** Css cho login-form-container ****/
+.login-form-container{
+    padding: 60px 70px 0;
+}
+
+/**** Css cho thẻ input ****/
+.login-form-input{
+    width: 100%;
+    height: 50px;
+    margin-top: 16px;
+    padding: 0 16px;
+    font-size: 1.6rem;
+
+    color: #000000;
+    /* color: #fff; */
+
+    /* background-color:  #333333; */
+    background-color:  #BFACE2;
+
+    border: 1px solid #333333;
+    border-radius: 4px;
+    outline: none;
+}
+
+/**** Css thêm viền khi click vào input nhập thông tin ****/
+.login-form-input:focus{
+    border-bottom: 3px solid #eeaf67;
+}
+
+/**** Chỉnh khoảng cách thẻ input đầu tiên tới Login header ****/
+.login-form-input:first-child{
+    margin-top: 30px;
+}
+
+/**** Css cho button ****/
+.login-form-button{
+    color: #fff;
+    /* background-color: #e50914; */
+    background-color: #3E54AC;
+    width: 100%;
+    font-size: 1.6rem;
+    padding:16px;
+    border-radius: 4px;
+    border: 0px;
+    margin: 40px 0 14px;
+    font-weight: 700;
+}
+
+/**** Css cho login-form-helper ****/
+.login-form-help{
+    color: #737373;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between; /* giúp sắp xếp các phần tử nằm bên trong theo chiều dọc hoặc chiều ngang */
+}
+
+/**** Css cho checkbox ****/
+.remberMe-cbx{
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    accent-color:#737373; /* Để chỉnh màu cho checkbox khi check ta có thể dùng thuộc tính accent-color */
+}
+
+.remember-lbl{
+    position: relative;
+    bottom: 3px;
+}
+
+.help-link{
+    text-decoration: none;
+    color: #737373;
+}
+
+/**** Css cho Login fb ****/
+.login-form-other{
+    margin-top: 60px;
+}
+
+.login-fb{
+    text-decoration: none;
+}
+
+.login-fb-icon{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.login-fb-text{
+    font-size: 1.3rem;
+    color: #737373;
+    font-weight: 500;
+    position: relative;
+    bottom: 6px;
+}
+
+.login-form-signupnow
+{
+    font-size: 16px;
+    color: #737373;
+    margin-top: 16px;
+}
+
+.login-form-signupnow-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-term{
+    color: #737373;
+    font-size: 1.3rem;
+    margin-top: 16px;
+    color: #737373;
+
+}
+
+.login-term p{
+    display: inline;
+}
+
+.login-term a{
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.login-term a:hover{
+    text-decoration: underline;
+}
+
+
+.login-footer{
+    width: 100%;
+    background-color:  rgba(0,0,0,0.75);
+    height: 220px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 30px 0;
+}
+
+/* dropdown css **/
+/* Style the dropdown button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
